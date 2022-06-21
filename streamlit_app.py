@@ -17,8 +17,8 @@ import numpy
 #fruits_to_show = my_fruit_list.loc[fruits_selected]
 #streamlit.dataframe(fruits_to_show)
 
-df = pd.DataFrame(
-     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+df = pandas.DataFrame(
+     numpy.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
      columns=['lat', 'lon'])
 
-st.map(df)
+streamlit.map(df)
